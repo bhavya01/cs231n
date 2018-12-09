@@ -146,7 +146,6 @@ def adam(x, dx, config=None):
     vt = config['v']/(1 - config['beta2']**config['t'])
     next_x = x - config['learning_rate']*mt/(np.sqrt(vt) + config['epsilon'])
 
-   
     ###########################################################################
     #                             END OF YOUR CODE                            #
     ###########################################################################
